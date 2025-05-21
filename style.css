@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(135deg, rgb(131, 58, 180), rgb(58, 12, 101), rgb(17, 5, 48));
+  color: #f1f1f1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+
+.container {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 2rem 3rem;
+  border-radius: 20px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(8.5px);
+  -webkit-backdrop-filter: blur(8.5px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  text-align: center;
+  animation: fadeInUp 1s ease;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+input {
+  padding: 0.75rem 1rem;
+  width: 100%;
+  max-width: 400px;
+  border: none;
+  border-radius: 10px;
+  margin-bottom: 1.2rem;
+  font-size: 1rem;
+  outline: none;
+  background: #2e3b4e;
+  color: #fff;
+  transition: background 0.3s ease;
+}
+
+input:focus {
+  background: #3e4f63;
+}
+
+button {
+  padding: 0.6rem 1.5rem;
+  font-size: 1rem;
+  background: #00c9a7;
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  margin: 0.5rem;
+  transition: transform 0.2s ease, background 0.3s ease;
+}
+
+button:hover {
+  background: #00b39f;
+  transform: scale(1.05);
+}
+
+#qrCodeContainer {
+  margin-top: 2rem;
+  animation: zoomIn 0.5s ease-in-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    transform: scale(0.85);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
